@@ -3,9 +3,9 @@ const findSum = function(array) {
         return sum + number;
     });
     return sum;
-  };
+};
   
-  const findFrequency = function(array) {
+const findFrequency = function(array) {
     var occurrences = [];
     var frequency = [];
 
@@ -37,9 +37,10 @@ const findSum = function(array) {
 
     var output = {most: occurrences[frequency.indexOf(max)], least: occurrences[frequency.indexOf(min)]};
     return output;
-  };
+};
+
   
-  const isPalindrome = function(str) {
+const isPalindrome = function(str) {
     var minIndex = 0;
     var maxIndex = str.length - 1;
     var strLower = str.toLowerCase();
@@ -53,9 +54,9 @@ const findSum = function(array) {
         }
     }
     return true;
-  };
+};
   
-  const largestPair = function(array) {
+const largestPair = function(array) {
     var largestProduct = 0;
 
     for(let i = 0; i < array.length; i++) {
@@ -65,16 +66,16 @@ const findSum = function(array) {
         }
     }
     return largestProduct;
-  };
+};
   
-  const removeParenth = function(str) {
+const removeParenth = function(str) {
     var firstHalf = str.slice(0, str.indexOf('('));
     var secondHalf = str.slice(str.indexOf(')') + 1);
 
     return firstHalf.concat('', secondHalf);
-  };
+};
   
-  const scoreScrabble = function(str) {
+const scoreScrabble = function(str) {
     var strLower = str.toLowerCase();
     var score = 0;
     var scrabbleValues = [
@@ -102,4 +103,4 @@ const findSum = function(array) {
     }
 
     return score;
-  };
+};
